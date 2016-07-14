@@ -1,0 +1,16 @@
+/* Extended CSS file for Doxygen documentation. */
+
+#projectname { font-size: 200%; }
+
+/*
+code {
+    background-color: #DDD;
+    padding: 0px 2px 0px 2px;
+    border-radius: 3px;
+}
+*/
+
+code {
+    text-decoration: underline;
+}
+

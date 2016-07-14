@@ -1,0 +1,113 @@
+Simple="$WORKHOME/plx/src/Simple" CD=. enc="utf8" fmt="unix" in=onload.vim {
+ docs=docs {
+  doxyfile.css
+ }
+ source=Simple {
+  exports=. {
+   Simple.h
+   Info.plist
+  }
+  general=. {
+   sfstd.h
+   debug=. {
+    sfdebug.h
+    sfdebug.m
+   }
+   SFRect=. {
+    SFRect.h
+    SFRect.m
+   }
+   CGRect=. {
+    sfcgrect.h
+    sfcgrect.m
+   }
+   SFQueue=. {
+    SFQueue.h
+    SFQueue.m
+   }
+   SFCache=. {
+    SFCache.h
+    SFCache.m
+   }
+   SFWeakList=. {
+    SFWeakList.h
+    SFWeakList.m
+   }
+   SFWeakMap=. {
+    SFWeakMap.h
+    SFWeakMap.m
+   }
+   SFTime=. {
+    SFTime.h
+    SFTime.m
+   }
+  }
+  information=. {
+   SFDeviceInfo=. {
+    SFDeviceInfo.h
+    SFDeviceInfo.m
+   }
+  }
+  categories=. {
+   NSObject (SFObject)=. {
+    SFObject.h
+    SFObject.m
+   }
+   NSString (SFString)=. {
+    SFString.h
+    SFString.m
+   }
+   NSDictionary (SFDictionary)=. {
+    SFDictionary.h
+    SFDictionary.m
+   }
+   NSData (SFData)=. {
+    SFData.h
+    SFData.m
+   }
+   UIImage (SFImage)=. {
+    SFImage.h
+    SFImage.m
+   }
+   UIColor (SFColor)=. {
+    SFColor.h
+    SFColor.m
+   }
+  }
+  networking=. {
+   SFStream=. {
+    SFStream.h
+    SFStream.m
+   }
+   SFSocket=. {
+    SFSocket.h
+    SFSocket.m
+   }
+   SFReachability=. {
+    SFReachability.h
+    SFReachability.m
+   }
+  }
+  XML support=. {
+   SFXml=. {
+    SFXml.h
+    SFXml.m
+   }
+   SFStringTable=. {
+    SFStringTable.h
+    SFStringTable.m
+   }
+  }
+  message system=. {
+   SFSender.h
+   SFSender.m
+  }
+ }
+ .gitignore
+ .gvimrc
+ README.md
+ onload.vim
+ doxyfile
+ Makefile
+ ChangeLog
+}

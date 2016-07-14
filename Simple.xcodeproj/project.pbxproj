@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2B21D9D1D380FF700424ED1 /* Simple.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21D9C1D380FF700424ED1 /* Simple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B21DA41D380FF700424ED1 /* Simple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B21D991D380FF700424ED1 /* Simple.framework */; };
+		D2B21DA91D380FF700424ED1 /* SimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DA81D380FF700424ED1 /* SimpleTests.m */; };
+		D2B21DB51D381A2B00424ED1 /* sfstd.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB41D381A2B00424ED1 /* sfstd.h */; };
+		D2B21DC01D381C8400424ED1 /* SFCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB61D381C8400424ED1 /* SFCache.h */; };
+		D2B21DC11D381C8400424ED1 /* SFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DB71D381C8400424ED1 /* SFCache.m */; };
+		D2B21DC21D381C8400424ED1 /* sfcgrect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB81D381C8400424ED1 /* sfcgrect.h */; };
+		D2B21DC31D381C8400424ED1 /* sfcgrect.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DB91D381C8400424ED1 /* sfcgrect.m */; };
+		D2B21DC41D381C8400424ED1 /* SFQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBA1D381C8400424ED1 /* SFQueue.h */; };
+		D2B21DC51D381C8400424ED1 /* SFQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DBB1D381C8400424ED1 /* SFQueue.m */; };
+		D2B21DC61D381C8400424ED1 /* SFRect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBC1D381C8400424ED1 /* SFRect.h */; };
+		D2B21DC71D381C8400424ED1 /* SFRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DBD1D381C8400424ED1 /* SFRect.m */; };
+		D2B21DC81D381C8400424ED1 /* SFWeakList.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBE1D381C8400424ED1 /* SFWeakList.h */; };
+		D2B21DC91D381C8400424ED1 /* SFWeakList.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DBF1D381C8400424ED1 /* SFWeakList.m */; };
+		D2B21DCC1D381D4F00424ED1 /* SFWeakMap.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DCA1D381D4F00424ED1 /* SFWeakMap.h */; };
+		D2B21DCD1D381D4F00424ED1 /* SFWeakMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DCB1D381D4F00424ED1 /* SFWeakMap.m */; };
+		D2B21DD11D381E8B00424ED1 /* SFDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DCF1D381E8B00424ED1 /* SFDeviceInfo.h */; };
+		D2B21DD21D381E8B00424ED1 /* SFDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DD01D381E8B00424ED1 /* SFDeviceInfo.m */; };
+		D2B21DD51D381E9800424ED1 /* sfdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DD31D381E9800424ED1 /* sfdebug.h */; };
+		D2B21DD61D381E9800424ED1 /* sfdebug.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DD41D381E9800424ED1 /* sfdebug.m */; };
+		D2B21DE41D38209E00424ED1 /* SFColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DD81D38209E00424ED1 /* SFColor.h */; };
+		D2B21DE51D38209E00424ED1 /* SFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DD91D38209E00424ED1 /* SFColor.m */; };
+		D2B21DE61D38209E00424ED1 /* SFData.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDA1D38209E00424ED1 /* SFData.h */; };
+		D2B21DE71D38209E00424ED1 /* SFData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DDB1D38209E00424ED1 /* SFData.m */; };
+		D2B21DE81D38209E00424ED1 /* SFDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDC1D38209E00424ED1 /* SFDictionary.h */; };
+		D2B21DE91D38209E00424ED1 /* SFDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DDD1D38209E00424ED1 /* SFDictionary.m */; };
+		D2B21DEA1D38209E00424ED1 /* SFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDE1D38209E00424ED1 /* SFImage.h */; };
+		D2B21DEB1D38209E00424ED1 /* SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DDF1D38209E00424ED1 /* SFImage.m */; };
+		D2B21DEC1D38209E00424ED1 /* SFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DE01D38209E00424ED1 /* SFObject.h */; };
+		D2B21DED1D38209E00424ED1 /* SFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DE11D38209E00424ED1 /* SFObject.m */; };
+		D2B21DEE1D38209E00424ED1 /* SFString.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DE21D38209E00424ED1 /* SFString.h */; };
+		D2B21DEF1D38209E00424ED1 /* SFString.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DE31D38209E00424ED1 /* SFString.m */; };
+		D2B21DF21D3821EC00424ED1 /* SFTime.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF01D3821EC00424ED1 /* SFTime.h */; };
+		D2B21DF31D3821EC00424ED1 /* SFTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DF11D3821EC00424ED1 /* SFTime.m */; };
+		D2B21DFB1D3822A800424ED1 /* SFReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF51D3822A800424ED1 /* SFReachability.h */; };
+		D2B21DFC1D3822A800424ED1 /* SFReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DF61D3822A800424ED1 /* SFReachability.m */; };
+		D2B21DFD1D3822A800424ED1 /* SFSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF71D3822A800424ED1 /* SFSocket.h */; };
+		D2B21DFE1D3822A800424ED1 /* SFSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DF81D3822A800424ED1 /* SFSocket.m */; };
+		D2B21DFF1D3822A800424ED1 /* SFStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF91D3822A800424ED1 /* SFStream.h */; };
+		D2B21E001D3822A800424ED1 /* SFStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DFA1D3822A800424ED1 /* SFStream.m */; };
+		D2B21E061D38237C00424ED1 /* SFStringTable.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E021D38237C00424ED1 /* SFStringTable.h */; };
+		D2B21E071D38237C00424ED1 /* SFStringTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21E031D38237C00424ED1 /* SFStringTable.m */; };
+		D2B21E081D38237C00424ED1 /* SFXml.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E041D38237C00424ED1 /* SFXml.h */; };
+		D2B21E091D38237C00424ED1 /* SFXml.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21E051D38237C00424ED1 /* SFXml.m */; };
+		D2B21E0D1D3823F600424ED1 /* SFSender.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E0B1D3823F600424ED1 /* SFSender.h */; };
+		D2B21E0E1D3823F600424ED1 /* SFSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21E0C1D3823F600424ED1 /* SFSender.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2B21DA51D380FF700424ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2B21D901D380FF600424ED1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2B21D981D380FF700424ED1;
+			remoteInfo = Simple;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2B21D991D380FF700424ED1 /* Simple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Simple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B21D9C1D380FF700424ED1 /* Simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simple.h; sourceTree = "<group>"; };
+		D2B21D9E1D380FF700424ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B21DA31D380FF700424ED1 /* SimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B21DA81D380FF700424ED1 /* SimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTests.m; sourceTree = "<group>"; };
+		D2B21DAA1D380FF700424ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B21DB41D381A2B00424ED1 /* sfstd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sfstd.h; path = Simple/sfstd.h; sourceTree = "<group>"; };
+		D2B21DB61D381C8400424ED1 /* SFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCache.h; path = Simple/SFCache.h; sourceTree = "<group>"; };
+		D2B21DB71D381C8400424ED1 /* SFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCache.m; path = Simple/SFCache.m; sourceTree = "<group>"; };
+		D2B21DB81D381C8400424ED1 /* sfcgrect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sfcgrect.h; path = Simple/sfcgrect.h; sourceTree = "<group>"; };
+		D2B21DB91D381C8400424ED1 /* sfcgrect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sfcgrect.m; path = Simple/sfcgrect.m; sourceTree = "<group>"; };
+		D2B21DBA1D381C8400424ED1 /* SFQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFQueue.h; path = Simple/SFQueue.h; sourceTree = "<group>"; };
+		D2B21DBB1D381C8400424ED1 /* SFQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFQueue.m; path = Simple/SFQueue.m; sourceTree = "<group>"; };
+		D2B21DBC1D381C8400424ED1 /* SFRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFRect.h; path = Simple/SFRect.h; sourceTree = "<group>"; };
+		D2B21DBD1D381C8400424ED1 /* SFRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFRect.m; path = Simple/SFRect.m; sourceTree = "<group>"; };
+		D2B21DBE1D381C8400424ED1 /* SFWeakList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFWeakList.h; path = Simple/SFWeakList.h; sourceTree = "<group>"; };
+		D2B21DBF1D381C8400424ED1 /* SFWeakList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFWeakList.m; path = Simple/SFWeakList.m; sourceTree = "<group>"; };
+		D2B21DCA1D381D4F00424ED1 /* SFWeakMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFWeakMap.h; path = Simple/SFWeakMap.h; sourceTree = "<group>"; };
+		D2B21DCB1D381D4F00424ED1 /* SFWeakMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFWeakMap.m; path = Simple/SFWeakMap.m; sourceTree = "<group>"; };
+		D2B21DCF1D381E8B00424ED1 /* SFDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFDeviceInfo.h; path = Simple/SFDeviceInfo.h; sourceTree = "<group>"; };
+		D2B21DD01D381E8B00424ED1 /* SFDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFDeviceInfo.m; path = Simple/SFDeviceInfo.m; sourceTree = "<group>"; };
+		D2B21DD31D381E9800424ED1 /* sfdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sfdebug.h; path = Simple/sfdebug.h; sourceTree = "<group>"; };
+		D2B21DD41D381E9800424ED1 /* sfdebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sfdebug.m; path = Simple/sfdebug.m; sourceTree = "<group>"; };
+		D2B21DD81D38209E00424ED1 /* SFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFColor.h; path = Simple/SFColor.h; sourceTree = "<group>"; };
+		D2B21DD91D38209E00424ED1 /* SFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFColor.m; path = Simple/SFColor.m; sourceTree = "<group>"; };
+		D2B21DDA1D38209E00424ED1 /* SFData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFData.h; path = Simple/SFData.h; sourceTree = "<group>"; };
+		D2B21DDB1D38209E00424ED1 /* SFData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFData.m; path = Simple/SFData.m; sourceTree = "<group>"; };
+		D2B21DDC1D38209E00424ED1 /* SFDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFDictionary.h; path = Simple/SFDictionary.h; sourceTree = "<group>"; };
+		D2B21DDD1D38209E00424ED1 /* SFDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFDictionary.m; path = Simple/SFDictionary.m; sourceTree = "<group>"; };
+		D2B21DDE1D38209E00424ED1 /* SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFImage.h; path = Simple/SFImage.h; sourceTree = "<group>"; };
+		D2B21DDF1D38209E00424ED1 /* SFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFImage.m; path = Simple/SFImage.m; sourceTree = "<group>"; };
+		D2B21DE01D38209E00424ED1 /* SFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFObject.h; path = Simple/SFObject.h; sourceTree = "<group>"; };
+		D2B21DE11D38209E00424ED1 /* SFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFObject.m; path = Simple/SFObject.m; sourceTree = "<group>"; };
+		D2B21DE21D38209E00424ED1 /* SFString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFString.h; path = Simple/SFString.h; sourceTree = "<group>"; };
+		D2B21DE31D38209E00424ED1 /* SFString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFString.m; path = Simple/SFString.m; sourceTree = "<group>"; };
+		D2B21DF01D3821EC00424ED1 /* SFTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFTime.h; path = Simple/SFTime.h; sourceTree = "<group>"; };
+		D2B21DF11D3821EC00424ED1 /* SFTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFTime.m; path = Simple/SFTime.m; sourceTree = "<group>"; };
+		D2B21DF51D3822A800424ED1 /* SFReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFReachability.h; path = Simple/SFReachability.h; sourceTree = "<group>"; };
+		D2B21DF61D3822A800424ED1 /* SFReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFReachability.m; path = Simple/SFReachability.m; sourceTree = "<group>"; };
+		D2B21DF71D3822A800424ED1 /* SFSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSocket.h; path = Simple/SFSocket.h; sourceTree = "<group>"; };
+		D2B21DF81D3822A800424ED1 /* SFSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSocket.m; path = Simple/SFSocket.m; sourceTree = "<group>"; };
+		D2B21DF91D3822A800424ED1 /* SFStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFStream.h; path = Simple/SFStream.h; sourceTree = "<group>"; };
+		D2B21DFA1D3822A800424ED1 /* SFStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFStream.m; path = Simple/SFStream.m; sourceTree = "<group>"; };
+		D2B21E021D38237C00424ED1 /* SFStringTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFStringTable.h; path = Simple/SFStringTable.h; sourceTree = "<group>"; };
+		D2B21E031D38237C00424ED1 /* SFStringTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFStringTable.m; path = Simple/SFStringTable.m; sourceTree = "<group>"; };
+		D2B21E041D38237C00424ED1 /* SFXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFXml.h; path = Simple/SFXml.h; sourceTree = "<group>"; };
+		D2B21E051D38237C00424ED1 /* SFXml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFXml.m; path = Simple/SFXml.m; sourceTree = "<group>"; };
+		D2B21E0B1D3823F600424ED1 /* SFSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSender.h; path = Simple/SFSender.h; sourceTree = "<group>"; };
+		D2B21E0C1D3823F600424ED1 /* SFSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSender.m; path = Simple/SFSender.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2B21D951D380FF700424ED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B21DA01D380FF700424ED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B21DA41D380FF700424ED1 /* Simple.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2B21D8F1D380FF600424ED1 = {
+			isa = PBXGroup;
+			children = (
+				D2B21D9B1D380FF700424ED1 /* Simple */,
+				D2B21DB31D381A0D00424ED1 /* General */,
+				D2B21DCE1D381D5C00424ED1 /* Information */,
+				D2B21DD71D38207700424ED1 /* Categories */,
+				D2B21DF41D38228300424ED1 /* Networking */,
+				D2B21E011D38235C00424ED1 /* XML Support */,
+				D2B21E0A1D3823DF00424ED1 /* Message System */,
+				D2B21DA71D380FF700424ED1 /* SimpleTests */,
+				D2B21D9A1D380FF700424ED1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2B21D9A1D380FF700424ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21D991D380FF700424ED1 /* Simple.framework */,
+				D2B21DA31D380FF700424ED1 /* SimpleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2B21D9B1D380FF700424ED1 /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21D9C1D380FF700424ED1 /* Simple.h */,
+				D2B21D9E1D380FF700424ED1 /* Info.plist */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		D2B21DA71D380FF700424ED1 /* SimpleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21DA81D380FF700424ED1 /* SimpleTests.m */,
+				D2B21DAA1D380FF700424ED1 /* Info.plist */,
+			);
+			path = SimpleTests;
+			sourceTree = "<group>";
+		};
+		D2B21DB31D381A0D00424ED1 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21DF01D3821EC00424ED1 /* SFTime.h */,
+				D2B21DF11D3821EC00424ED1 /* SFTime.m */,
+				D2B21DD31D381E9800424ED1 /* sfdebug.h */,
+				D2B21DD41D381E9800424ED1 /* sfdebug.m */,
+				D2B21DCA1D381D4F00424ED1 /* SFWeakMap.h */,
+				D2B21DCB1D381D4F00424ED1 /* SFWeakMap.m */,
+				D2B21DB61D381C8400424ED1 /* SFCache.h */,
+				D2B21DB71D381C8400424ED1 /* SFCache.m */,
+				D2B21DB81D381C8400424ED1 /* sfcgrect.h */,
+				D2B21DB91D381C8400424ED1 /* sfcgrect.m */,
+				D2B21DBA1D381C8400424ED1 /* SFQueue.h */,
+				D2B21DBB1D381C8400424ED1 /* SFQueue.m */,
+				D2B21DBC1D381C8400424ED1 /* SFRect.h */,
+				D2B21DBD1D381C8400424ED1 /* SFRect.m */,
+				D2B21DBE1D381C8400424ED1 /* SFWeakList.h */,
+				D2B21DBF1D381C8400424ED1 /* SFWeakList.m */,
+				D2B21DB41D381A2B00424ED1 /* sfstd.h */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		D2B21DCE1D381D5C00424ED1 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21DCF1D381E8B00424ED1 /* SFDeviceInfo.h */,
+				D2B21DD01D381E8B00424ED1 /* SFDeviceInfo.m */,
+			);
+			name = Information;
+			sourceTree = "<group>";
+		};
+		D2B21DD71D38207700424ED1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21DD81D38209E00424ED1 /* SFColor.h */,
+				D2B21DD91D38209E00424ED1 /* SFColor.m */,
+				D2B21DDA1D38209E00424ED1 /* SFData.h */,
+				D2B21DDB1D38209E00424ED1 /* SFData.m */,
+				D2B21DDC1D38209E00424ED1 /* SFDictionary.h */,
+				D2B21DDD1D38209E00424ED1 /* SFDictionary.m */,
+				D2B21DDE1D38209E00424ED1 /* SFImage.h */,
+				D2B21DDF1D38209E00424ED1 /* SFImage.m */,
+				D2B21DE01D38209E00424ED1 /* SFObject.h */,
+				D2B21DE11D38209E00424ED1 /* SFObject.m */,
+				D2B21DE21D38209E00424ED1 /* SFString.h */,
+				D2B21DE31D38209E00424ED1 /* SFString.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D2B21DF41D38228300424ED1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21DF51D3822A800424ED1 /* SFReachability.h */,
+				D2B21DF61D3822A800424ED1 /* SFReachability.m */,
+				D2B21DF71D3822A800424ED1 /* SFSocket.h */,
+				D2B21DF81D3822A800424ED1 /* SFSocket.m */,
+				D2B21DF91D3822A800424ED1 /* SFStream.h */,
+				D2B21DFA1D3822A800424ED1 /* SFStream.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D2B21E011D38235C00424ED1 /* XML Support */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21E021D38237C00424ED1 /* SFStringTable.h */,
+				D2B21E031D38237C00424ED1 /* SFStringTable.m */,
+				D2B21E041D38237C00424ED1 /* SFXml.h */,
+				D2B21E051D38237C00424ED1 /* SFXml.m */,
+			);
+			name = "XML Support";
+			sourceTree = "<group>";
+		};
+		D2B21E0A1D3823DF00424ED1 /* Message System */ = {
+			isa = PBXGroup;
+			children = (
+				D2B21E0B1D3823F600424ED1 /* SFSender.h */,
+				D2B21E0C1D3823F600424ED1 /* SFSender.m */,
+			);
+			name = "Message System";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2B21D961D380FF700424ED1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B21E0D1D3823F600424ED1 /* SFSender.h in Headers */,
+				D2B21DEE1D38209E00424ED1 /* SFString.h in Headers */,
+				D2B21DFF1D3822A800424ED1 /* SFStream.h in Headers */,
+				D2B21DCC1D381D4F00424ED1 /* SFWeakMap.h in Headers */,
+				D2B21DD11D381E8B00424ED1 /* SFDeviceInfo.h in Headers */,
+				D2B21DC01D381C8400424ED1 /* SFCache.h in Headers */,
+				D2B21E061D38237C00424ED1 /* SFStringTable.h in Headers */,
+				D2B21DD51D381E9800424ED1 /* sfdebug.h in Headers */,
+				D2B21DC41D381C8400424ED1 /* SFQueue.h in Headers */,
+				D2B21DE81D38209E00424ED1 /* SFDictionary.h in Headers */,
+				D2B21DE61D38209E00424ED1 /* SFData.h in Headers */,
+				D2B21DC21D381C8400424ED1 /* sfcgrect.h in Headers */,
+				D2B21DF21D3821EC00424ED1 /* SFTime.h in Headers */,
+				D2B21DFB1D3822A800424ED1 /* SFReachability.h in Headers */,
+				D2B21E081D38237C00424ED1 /* SFXml.h in Headers */,
+				D2B21DE41D38209E00424ED1 /* SFColor.h in Headers */,
+				D2B21D9D1D380FF700424ED1 /* Simple.h in Headers */,
+				D2B21DB51D381A2B00424ED1 /* sfstd.h in Headers */,
+				D2B21DFD1D3822A800424ED1 /* SFSocket.h in Headers */,
+				D2B21DEA1D38209E00424ED1 /* SFImage.h in Headers */,
+				D2B21DEC1D38209E00424ED1 /* SFObject.h in Headers */,
+				D2B21DC81D381C8400424ED1 /* SFWeakList.h in Headers */,
+				D2B21DC61D381C8400424ED1 /* SFRect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2B21D981D380FF700424ED1 /* Simple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B21DAD1D380FF700424ED1 /* Build configuration list for PBXNativeTarget "Simple" */;
+			buildPhases = (
+				D2B21D941D380FF700424ED1 /* Sources */,
+				D2B21D951D380FF700424ED1 /* Frameworks */,
+				D2B21D961D380FF700424ED1 /* Headers */,
+				D2B21D971D380FF700424ED1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simple;
+			productName = Simple;
+			productReference = D2B21D991D380FF700424ED1 /* Simple.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2B21DA21D380FF700424ED1 /* SimpleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B21DB01D380FF700424ED1 /* Build configuration list for PBXNativeTarget "SimpleTests" */;
+			buildPhases = (
+				D2B21D9F1D380FF700424ED1 /* Sources */,
+				D2B21DA01D380FF700424ED1 /* Frameworks */,
+				D2B21DA11D380FF700424ED1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2B21DA61D380FF700424ED1 /* PBXTargetDependency */,
+			);
+			name = SimpleTests;
+			productName = SimpleTests;
+			productReference = D2B21DA31D380FF700424ED1 /* SimpleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2B21D901D380FF600424ED1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Paralaxe;
+				TargetAttributes = {
+					D2B21D981D380FF700424ED1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BB4FDN4N26;
+					};
+					D2B21DA21D380FF700424ED1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D2B21D931D380FF600424ED1 /* Build configuration list for PBXProject "Simple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2B21D8F1D380FF600424ED1;
+			productRefGroup = D2B21D9A1D380FF700424ED1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2B21D981D380FF700424ED1 /* Simple */,
+				D2B21DA21D380FF700424ED1 /* SimpleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2B21D971D380FF700424ED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B21DA11D380FF700424ED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2B21D941D380FF700424ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B21E091D38237C00424ED1 /* SFXml.m in Sources */,
+				D2B21DEB1D38209E00424ED1 /* SFImage.m in Sources */,
+				D2B21DC51D381C8400424ED1 /* SFQueue.m in Sources */,
+				D2B21DED1D38209E00424ED1 /* SFObject.m in Sources */,
+				D2B21DC31D381C8400424ED1 /* sfcgrect.m in Sources */,
+				D2B21DFE1D3822A800424ED1 /* SFSocket.m in Sources */,
+				D2B21DE91D38209E00424ED1 /* SFDictionary.m in Sources */,
+				D2B21DFC1D3822A800424ED1 /* SFReachability.m in Sources */,
+				D2B21DC71D381C8400424ED1 /* SFRect.m in Sources */,
+				D2B21DC11D381C8400424ED1 /* SFCache.m in Sources */,
+				D2B21DD61D381E9800424ED1 /* sfdebug.m in Sources */,
+				D2B21E001D3822A800424ED1 /* SFStream.m in Sources */,
+				D2B21DD21D381E8B00424ED1 /* SFDeviceInfo.m in Sources */,
+				D2B21E071D38237C00424ED1 /* SFStringTable.m in Sources */,
+				D2B21DE51D38209E00424ED1 /* SFColor.m in Sources */,
+				D2B21DC91D381C8400424ED1 /* SFWeakList.m in Sources */,
+				D2B21DE71D38209E00424ED1 /* SFData.m in Sources */,
+				D2B21DCD1D381D4F00424ED1 /* SFWeakMap.m in Sources */,
+				D2B21E0E1D3823F600424ED1 /* SFSender.m in Sources */,
+				D2B21DF31D3821EC00424ED1 /* SFTime.m in Sources */,
+				D2B21DEF1D38209E00424ED1 /* SFString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B21D9F1D380FF700424ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B21DA91D380FF700424ED1 /* SimpleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2B21DA61D380FF700424ED1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2B21D981D380FF700424ED1 /* Simple */;
+			targetProxy = D2B21DA51D380FF700424ED1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2B21DAB1D380FF700424ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2B21DAC1D380FF700424ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2B21DAE1D380FF700424ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.56.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Simple/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.Simple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2B21DAF1D380FF700424ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.56.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Simple/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.Simple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D2B21DB11D380FF700424ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.SimpleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D2B21DB21D380FF700424ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.SimpleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2B21D931D380FF600424ED1 /* Build configuration list for PBXProject "Simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B21DAB1D380FF700424ED1 /* Debug */,
+				D2B21DAC1D380FF700424ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2B21DAD1D380FF700424ED1 /* Build configuration list for PBXNativeTarget "Simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B21DAE1D380FF700424ED1 /* Debug */,
+				D2B21DAF1D380FF700424ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2B21DB01D380FF700424ED1 /* Build configuration list for PBXNativeTarget "SimpleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B21DB11D380FF700424ED1 /* Debug */,
+				D2B21DB21D380FF700424ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2B21D901D380FF600424ED1 /* Project object */;
+}
