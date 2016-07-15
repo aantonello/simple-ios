@@ -15,6 +15,6 @@ with my Vim setup. Because it depends on my Vim plugins.
    Windows.
 2. simple.vip: My project file. I don't like NERDTree so I use an old plugin
    called "Project" that I tweaked my self. It is available at
-   (project_vim)[https://github.com/aantonello/project_vim].
+   [project_vim](https://github.com/aantonello/project_vim).
 3. onload.vim: A configuration specific to be used with the "Project" plugin.
 

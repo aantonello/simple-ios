@@ -10,48 +10,48 @@
 		D2B21D9D1D380FF700424ED1 /* Simple.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21D9C1D380FF700424ED1 /* Simple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DA41D380FF700424ED1 /* Simple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B21D991D380FF700424ED1 /* Simple.framework */; };
 		D2B21DA91D380FF700424ED1 /* SimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DA81D380FF700424ED1 /* SimpleTests.m */; };
-		D2B21DB51D381A2B00424ED1 /* sfstd.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB41D381A2B00424ED1 /* sfstd.h */; };
-		D2B21DC01D381C8400424ED1 /* SFCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB61D381C8400424ED1 /* SFCache.h */; };
+		D2B21DB51D381A2B00424ED1 /* sfstd.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB41D381A2B00424ED1 /* sfstd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B21DC01D381C8400424ED1 /* SFCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB61D381C8400424ED1 /* SFCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DC11D381C8400424ED1 /* SFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DB71D381C8400424ED1 /* SFCache.m */; };
-		D2B21DC21D381C8400424ED1 /* sfcgrect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB81D381C8400424ED1 /* sfcgrect.h */; };
+		D2B21DC21D381C8400424ED1 /* sfcgrect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DB81D381C8400424ED1 /* sfcgrect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DC31D381C8400424ED1 /* sfcgrect.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DB91D381C8400424ED1 /* sfcgrect.m */; };
-		D2B21DC41D381C8400424ED1 /* SFQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBA1D381C8400424ED1 /* SFQueue.h */; };
+		D2B21DC41D381C8400424ED1 /* SFQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBA1D381C8400424ED1 /* SFQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DC51D381C8400424ED1 /* SFQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DBB1D381C8400424ED1 /* SFQueue.m */; };
-		D2B21DC61D381C8400424ED1 /* SFRect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBC1D381C8400424ED1 /* SFRect.h */; };
+		D2B21DC61D381C8400424ED1 /* SFRect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBC1D381C8400424ED1 /* SFRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DC71D381C8400424ED1 /* SFRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DBD1D381C8400424ED1 /* SFRect.m */; };
-		D2B21DC81D381C8400424ED1 /* SFWeakList.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBE1D381C8400424ED1 /* SFWeakList.h */; };
+		D2B21DC81D381C8400424ED1 /* SFWeakList.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DBE1D381C8400424ED1 /* SFWeakList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DC91D381C8400424ED1 /* SFWeakList.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DBF1D381C8400424ED1 /* SFWeakList.m */; };
-		D2B21DCC1D381D4F00424ED1 /* SFWeakMap.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DCA1D381D4F00424ED1 /* SFWeakMap.h */; };
+		D2B21DCC1D381D4F00424ED1 /* SFWeakMap.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DCA1D381D4F00424ED1 /* SFWeakMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DCD1D381D4F00424ED1 /* SFWeakMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DCB1D381D4F00424ED1 /* SFWeakMap.m */; };
-		D2B21DD11D381E8B00424ED1 /* SFDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DCF1D381E8B00424ED1 /* SFDeviceInfo.h */; };
+		D2B21DD11D381E8B00424ED1 /* SFDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DCF1D381E8B00424ED1 /* SFDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DD21D381E8B00424ED1 /* SFDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DD01D381E8B00424ED1 /* SFDeviceInfo.m */; };
-		D2B21DD51D381E9800424ED1 /* sfdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DD31D381E9800424ED1 /* sfdebug.h */; };
+		D2B21DD51D381E9800424ED1 /* sfdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DD31D381E9800424ED1 /* sfdebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DD61D381E9800424ED1 /* sfdebug.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DD41D381E9800424ED1 /* sfdebug.m */; };
-		D2B21DE41D38209E00424ED1 /* SFColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DD81D38209E00424ED1 /* SFColor.h */; };
+		D2B21DE41D38209E00424ED1 /* SFColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DD81D38209E00424ED1 /* SFColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DE51D38209E00424ED1 /* SFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DD91D38209E00424ED1 /* SFColor.m */; };
-		D2B21DE61D38209E00424ED1 /* SFData.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDA1D38209E00424ED1 /* SFData.h */; };
+		D2B21DE61D38209E00424ED1 /* SFData.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDA1D38209E00424ED1 /* SFData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DE71D38209E00424ED1 /* SFData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DDB1D38209E00424ED1 /* SFData.m */; };
-		D2B21DE81D38209E00424ED1 /* SFDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDC1D38209E00424ED1 /* SFDictionary.h */; };
+		D2B21DE81D38209E00424ED1 /* SFDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDC1D38209E00424ED1 /* SFDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DE91D38209E00424ED1 /* SFDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DDD1D38209E00424ED1 /* SFDictionary.m */; };
-		D2B21DEA1D38209E00424ED1 /* SFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDE1D38209E00424ED1 /* SFImage.h */; };
+		D2B21DEA1D38209E00424ED1 /* SFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DDE1D38209E00424ED1 /* SFImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DEB1D38209E00424ED1 /* SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DDF1D38209E00424ED1 /* SFImage.m */; };
-		D2B21DEC1D38209E00424ED1 /* SFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DE01D38209E00424ED1 /* SFObject.h */; };
+		D2B21DEC1D38209E00424ED1 /* SFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DE01D38209E00424ED1 /* SFObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DED1D38209E00424ED1 /* SFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DE11D38209E00424ED1 /* SFObject.m */; };
-		D2B21DEE1D38209E00424ED1 /* SFString.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DE21D38209E00424ED1 /* SFString.h */; };
+		D2B21DEE1D38209E00424ED1 /* SFString.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DE21D38209E00424ED1 /* SFString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DEF1D38209E00424ED1 /* SFString.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DE31D38209E00424ED1 /* SFString.m */; };
-		D2B21DF21D3821EC00424ED1 /* SFTime.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF01D3821EC00424ED1 /* SFTime.h */; };
+		D2B21DF21D3821EC00424ED1 /* SFTime.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF01D3821EC00424ED1 /* SFTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DF31D3821EC00424ED1 /* SFTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DF11D3821EC00424ED1 /* SFTime.m */; };
-		D2B21DFB1D3822A800424ED1 /* SFReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF51D3822A800424ED1 /* SFReachability.h */; };
+		D2B21DFB1D3822A800424ED1 /* SFReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF51D3822A800424ED1 /* SFReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DFC1D3822A800424ED1 /* SFReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DF61D3822A800424ED1 /* SFReachability.m */; };
-		D2B21DFD1D3822A800424ED1 /* SFSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF71D3822A800424ED1 /* SFSocket.h */; };
+		D2B21DFD1D3822A800424ED1 /* SFSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF71D3822A800424ED1 /* SFSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21DFE1D3822A800424ED1 /* SFSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DF81D3822A800424ED1 /* SFSocket.m */; };
-		D2B21DFF1D3822A800424ED1 /* SFStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF91D3822A800424ED1 /* SFStream.h */; };
+		D2B21DFF1D3822A800424ED1 /* SFStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21DF91D3822A800424ED1 /* SFStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21E001D3822A800424ED1 /* SFStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21DFA1D3822A800424ED1 /* SFStream.m */; };
-		D2B21E061D38237C00424ED1 /* SFStringTable.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E021D38237C00424ED1 /* SFStringTable.h */; };
+		D2B21E061D38237C00424ED1 /* SFStringTable.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E021D38237C00424ED1 /* SFStringTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21E071D38237C00424ED1 /* SFStringTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21E031D38237C00424ED1 /* SFStringTable.m */; };
-		D2B21E081D38237C00424ED1 /* SFXml.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E041D38237C00424ED1 /* SFXml.h */; };
+		D2B21E081D38237C00424ED1 /* SFXml.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E041D38237C00424ED1 /* SFXml.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21E091D38237C00424ED1 /* SFXml.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21E051D38237C00424ED1 /* SFXml.m */; };
-		D2B21E0D1D3823F600424ED1 /* SFSender.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E0B1D3823F600424ED1 /* SFSender.h */; };
+		D2B21E0D1D3823F600424ED1 /* SFSender.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B21E0B1D3823F600424ED1 /* SFSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B21E0E1D3823F600424ED1 /* SFSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B21E0C1D3823F600424ED1 /* SFSender.m */; };
 /* End PBXBuildFile section */
 
@@ -542,7 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.Simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -562,7 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.Simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -605,6 +605,7 @@
 				D2B21DAF1D380FF700424ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2B21DB01D380FF700424ED1 /* Build configuration list for PBXNativeTarget "SimpleTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +614,7 @@
 				D2B21DB21D380FF700424ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
