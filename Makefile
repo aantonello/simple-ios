@@ -1,91 +1,113 @@
 # ============================================================================
 # Makefile script.
 # ============================================================================
-.PHONY: debug release clean all docs install
+.PHONY: debug release clean docs
 
 # ----------------------------------------------------------------------------
 # CONFIGURATION
 # ----------------------------------------------------------------------------
+ifeq ($(findstring release,$(MAKECMDGOALS)),release)
+CONFIG=Release
+else
+CONFIG=Debug
+endif
+
 LIBVER  = 2.0
 BUILD   = 56
 TARGET  = Simple
 VERSION = A
 ROOTDIR = .
+OUTDIR  = $(PWD)/build
 PROJECT = $(ROOTDIR)/$(TARGET).xcodeproj
-INSTALLDIR = $(WORKHOME)/libs/simple-$(LIBVER)/ios
+FRMKSIM = $(OUTDIR)/$(CONFIG)-iphonesimulator/$(TARGET).framework
+FRMKIOS = $(OUTDIR)/$(CONFIG)-iphoneos/$(TARGET).framework
+BINDIR  = $(OUTDIR)/$(CONFIG)
+LIBDIR  = $(WORKHOME)/libs/$(TARGET)-$(LIBVER)
+DISTDIR = $(LIBDIR)/$(CONFIG)
+DISTFMK = $(DISTDIR)/$(TARGET).framework
 HELPDIR = docs/help
-DOCSDIR = simple-$(LIBVER)
-
-# ----------------------------------------------------------------------------
-# DEFAULT DIRECTORIES
-# NOTE: BUILD_X86 and BUILD_ARM paths are defined in the project file.
-# ----------------------------------------------------------------------------
-BUILD_DIR = $(PWD)/build
-BUILD_DBG = $(BUILD_DIR)/Debug
-BUILD_REL = $(BUILD_DIR)/Release
-DIST_DIR  = $(INSTALLDIR)/$(TARGET).framework
+DOCSDIR = $(TARGET)-$(LIBVER)
 
 # ----------------------------------------------------------------------------
 # Xcode Environment
 # ----------------------------------------------------------------------------
-PROJECT_TEMP_DIR=$(BUILD_DIR)/temp
-ifeq ($(findstring debug,$(MAKECMDGOALS)),debug)
-  CONFIGURATION_BUILD_DIR=$(BUILD_DIR)/Debug
-  BUILT_PRODUCTS_DIR=$(BUILD_DIR)/Products/Debug
-else
-  CONFIGURATION_BUILD_DIR=$(BUILD_DIR)/Release
-  BUILT_PRODUCTS_DIR=$(BUILD_DIR)/Products/Release
-endif
-XCENV=PROJECT_TEMP_DIR=$(PROJECT_TEMP_DIR) \
-	  CONFIGURATION_BUILD_DIR=$(CONFIGURATION_BUILD_DIR) \
-	  BUILT_PRODUCTS_DIR=$(BUILT_PRODUCTS_DIR)
-
-ROOTS=OBJROOT=$(BUILD_DIR)/temp \
-	  SYMROOT=$(BUILD_DIR)
+XCENV=OBJROOT=$(OUTDIR) SYMROOT=$(OUTDIR) DSTROOT=$(OUTDIR)
 
 # ----------------------------------------------------------------------------
 # OUTPUT FILES
 # ----------------------------------------------------------------------------
-OUTSIM = $(BUILD_DBG)/$(TARGET).framework/$(TARGET)
-OUTARM = $(BUILD_REL)/$(TARGET).framework/$(TARGET)
-OUTPUT = $(DIST_DIR)/Versions/$(VERSION)/$(TARGET)
+OUTSIM = $(FRMKSIM)/$(TARGET)
+OUTIOS = $(FRMKIOS)/$(TARGET)
+OUTPUT = $(BINDIR)/$(TARGET)
 
 # ----------------------------------------------------------------------------
 # MAKEFILE TARGETS
 # ----------------------------------------------------------------------------
-debug :
-	xcodebuild -project "$(PROJECT)" -configuration Debug -target "$(TARGET)" -sdk iphonesimulator $(ROOTS)
+$(BINDIR) :
+	mkdir -p $(BINDIR)
 
-release : debug
-	xcodebuild -project "$(PROJECT)" -configuration Release -target "$(TARGET)" -sdk iphoneos $(XCENV)
-	lipo -create "$(OUTSIM)" "$(OUTARM)" -output "$(OUTPUT)"
+$(DISTDIR) :
+	mkdir -p $(DISTDIR)
 
 clean :
-	rm -fR $(BUILD_DIR)
+	rm -fR $(OUTDIR)
+
+build-sim :
+	xcodebuild -project "$(PROJECT)" -configuration $(CONFIG) -sdk iphonesimulator $(XCENV)
+
+build-ios :
+	xcodebuild -project "$(PROJECT)" -configuration $(CONFIG) -sdk iphoneos $(XCENV)
+
+build-lib : $(BINDIR)
+	lipo -create "$(OUTSIM)" "$(OUTIOS)" -output "$(OUTPUT)"
+
+install : $(DISTDIR)
+	cp -R $(FRMKIOS) $(DISTDIR)
+	cp $(OUTPUT) $(DISTFMK)/$(TARGET)
+
+debug-sim : build-sim
+
+debug-ios : build-ios
+
+release-sim : build-sim
+
+release-ios : build-ios
+
+debug : build-sim build-ios build-lib
+
+release : build-sim build-ios build-lib
+
+debug-install : debug install
+
+release-install : release install
 
 $(HELPDIR) :
 	mkdir -p $@
 
-$(DIST_DIR) :
-	mkdir -p "$(DIST_DIR)"
-	mkdir -p "$(DIST_DIR)/Versions"
-	mkdir -p "$(DIST_DIR)/Versions/$(VERSION)"
-	mkdir -p "$(DIST_DIR)/Versions/$(VERSION)/Resources"
-	mkdir -p "$(DIST_DIR)/Versions/$(VERSION)/Headers"
-	ln -s "$(VERSION)" "$(DIST_DIR)/Versions/Current"
-	ln -s "Versions/Current/Headers" "$(DIST_DIR)/Headers"
-	ln -s "Versions/Current/Resources" "$(DIST_DIR)/Resources"
-	ln -s "Versions/Current/$(TARGET)" "$(DIST_DIR)/$(TARGET)"
-
-install :
-	rm -fR "$(INSTALLDIR)"
-	mkdir -p "$(INSTALLDIR)"
-	cp -R "$(DIST_DIR)" "$(INSTALLDIR)"
-
 docs : $(HELPDIR)
-	( cat Doxyfile ; echo "PROJECT_NUMBER=$(LIBVER).$(BUILD)" ) | doxygen -
+	( cat doxyfile ; echo "PROJECT_NUMBER=$(LIBVER).$(BUILD)" ) | doxygen -
 
 docs-install:
 	publish -doc plx/$(DOCSDIR) -f -q
-	cp "$(HELPDIR)/simple.dxt" "$(INSTALLDIR)"
+	cp "$(HELPDIR)/$(TARGET).dxt" "$(LIBDIR)"
+
+help :
+	@echo "$(TARGET).framework makefile targets:\n"\
+		 "clean            Erases everything below 'build' directory.\n"\
+		 "debug-sim        Build 'Debug' configuration for Simulator only.\n"\
+		 "debug-ios        Build 'Debug' configuration for iOS only.\n"\
+		 "debug            Build 'Debug' configuration for Simulator and iOS.\n"\
+		 "debug-install    Build and publishes the 'Debug' configuration.\n"\
+		 "release-sim      Build 'Release' configuration for Simulator only.\n"\
+		 "release-ios      Build 'Release' configuration for iOS only.\n"\
+		 "release          Build 'Release' configuration for Simulator and iOS.\n"\
+		 "release-install  Build and publishes the 'Release' configuration.\n"\
+		 "\n"\
+		 "The 'debug-install' or 'release-install' can only install after both\n"\
+		 "simulator and iOS targats are built. Each configuration is put in a\n"\
+		 "different distribution directory:\n"\
+		 "For 'Debug' configuration:\n"\
+		 "'$(LIBDIR)/Debug'\n"\
+		 "For 'Release' configuration:\n"\
+		 "'$(LIBDIR)/Release'\n"
 
