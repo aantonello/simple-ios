@@ -27,6 +27,8 @@ DISTDIR = $(LIBDIR)/$(CONFIG)
 DISTFMK = $(DISTDIR)/$(TARGET).framework
 HELPDIR = docs/help
 DOCSDIR = $(TARGET)-$(LIBVER)
+IOSARCHS = -arch arm64 -arch armv7 -arch armv7s only_active_arch=NO
+SIMARCHS = -arch x86_64 -arch i386 only_active_arch=NO
 
 # ----------------------------------------------------------------------------
 # Xcode Environment
@@ -53,10 +55,10 @@ clean :
 	rm -fR $(OUTDIR)
 
 build-sim :
-	xcodebuild -project "$(PROJECT)" -configuration $(CONFIG) -sdk iphonesimulator $(XCENV)
+	xcodebuild -project "$(PROJECT)" -configuration $(CONFIG) $(SIMARCHS) -sdk iphonesimulator $(XCENV)
 
 build-ios :
-	xcodebuild -project "$(PROJECT)" -configuration $(CONFIG) -sdk iphoneos $(XCENV)
+	xcodebuild -project "$(PROJECT)" -configuration $(CONFIG) $(IOSARCHS) -sdk iphoneos $(XCENV)
 
 build-lib : $(BINDIR)
 	lipo -create "$(OUTSIM)" "$(OUTIOS)" -output "$(OUTPUT)"
