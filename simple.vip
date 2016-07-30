@@ -108,7 +108,7 @@ Simple="$WORKHOME/plx/src/Simple" CD=. enc="utf8" fmt="unix" in=onload.vim {
  README.md
  onload.vim
  doxyfile
- Makefile
  build.sh
+ Makefile
  ChangeLog
 }
