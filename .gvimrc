@@ -4,7 +4,9 @@ if has("win32")
     color chela
     set columns=150 lines=99
 else
-    set guifont=Monaco:h10
-    color mac2
+"    set guifont=Monaco:h10
+"    color mac2
+    set guifont=Sauce\ Code\ Powerline:h12
+    color white
 endif
 

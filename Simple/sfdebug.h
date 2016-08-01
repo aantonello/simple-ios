@@ -24,7 +24,7 @@
  * Shortcut to convert an NSString object to UTF-8 char array.
  * @param x The NSString object to convert.
  **/
-#define    sfutf8(x)            ([(x) utf8Array])
+#define    sfutf8(x)            ([(x) cStringUsingEncoding:NSUTF8StringEncoding])
 
 /**
  * Shortcut to convert a NSString into UTF-8 char array.

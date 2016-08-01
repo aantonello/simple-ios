@@ -14,38 +14,37 @@ FOUNDATION_EXPORT double SimpleVersionNumber;
 //! Project version string for Simple.
 FOUNDATION_EXPORT const unsigned char SimpleVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Simple/PublicHeader.h>
 // General:
-#import <Simple/sfstd.h>
-#import <Simple/sfdebug.h>
-#import <Simple/SFRect.h>
-#import <Simple/sfcgrect.h>
-#import <Simple/SFQueue.h>
-#import <Simple/SFCache.h>
-#import <Simple/SFWeakList.h>
-#import <Simple/SFWeakMap.h>
-#import <Simple/SFTime.h>
+#import "sfstd.h"
+#import "sfdebug.h"
+#import "SFRect.h"
+#import "sfcgrect.h"
+#import "SFQueue.h"
+#import "SFCache.h"
+#import "SFWeakList.h"
+#import "SFWeakMap.h"
+#import "SFTime.h"
 
 // Information:
-#import <Simple/SFDeviceInfo.h>
+#import "SFDeviceInfo.h"
 
 // Categories:
-#import <Simple/SFObject.h>
-#import <Simple/SFString.h>
-#import <Simple/SFDictionary.h>
-#import <Simple/SFData.h>
-#import <Simple/SFImage.h>
-#import <Simple/SFColor.h>
+#import "SFObject.h"
+#import "SFString.h"
+#import "SFDictionary.h"
+#import "SFData.h"
+#import "SFImage.h"
+#import "SFColor.h"
 
 // Networking:
-#import <Simple/SFStream.h>
-#import <Simple/SFSocket.h>
-#import <Simple/SFReachability.h>
+#import "SFStream.h"
+#import "SFSocket.h"
+#import "SFReachability.h"
 
 // XML Support:
-#import <Simple/SFXml.h>
-#import <Simple/SFStringTable.h>
+#import "SFXml.h"
+#import "SFStringTable.h"
 
 // Message System:
-#import <Simple/SFSender.h>
+#import "SFSender.h"
 
