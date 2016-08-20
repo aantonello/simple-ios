@@ -67,6 +67,16 @@ install : $(DISTDIR)
 	cp -R $(FRMKIOS) $(DISTDIR)
 	cp $(OUTPUT) $(DISTFMK)/$(TARGET)
 
+debug-clean :
+	rm -fr $(FRMKSIM)
+	rm -fr $(FRMKIOS)
+	rm -fr $(BINDIR)
+
+release-clean :
+	rm -fr $(FRMKSIM)
+	rm -fr $(FRMKIOS)
+	rm -fr $(BINDIR)
+
 debug-sim : build-sim
 
 debug-ios : build-ios
@@ -100,10 +110,12 @@ help :
 		 "debug-ios        Build 'Debug' configuration for iOS only.\n"\
 		 "debug            Build 'Debug' configuration for Simulator and iOS.\n"\
 		 "debug-install    Build and publishes the 'Debug' configuration.\n"\
+		 "debug-clean      Cleanup of debugging compiled binaries.\n"\
 		 "release-sim      Build 'Release' configuration for Simulator only.\n"\
 		 "release-ios      Build 'Release' configuration for iOS only.\n"\
 		 "release          Build 'Release' configuration for Simulator and iOS.\n"\
 		 "release-install  Build and publishes the 'Release' configuration.\n"\
+		 "release-clean    Cleanup of release compiled binaries.\n"\
 		 "\n"\
 		 "The 'debug-install' or 'release-install' can only install after both\n"\
 		 "simulator and iOS targats are built. Each configuration is put in a\n"\

@@ -372,7 +372,9 @@ static SFWeakMap *s__stringTableMap = nil;
 + (SFXMLFile *)userXmlFileNamed:(NSString *)name
 {
     /* Check if this name has an extension. If it does not, we append one. */
-    if ([[name pathExtension] isEmpty])
+    NSString *fileExt = [name pathExtension];
+
+    if ([fileExt isEmpty])
         name = [name stringByAppendingPathExtension:SF_XML];
 
     NSString *fileName = [SFAssets pathForUserFile:name localized:YES];
