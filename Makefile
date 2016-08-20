@@ -87,7 +87,7 @@ release-ios : build-ios
 
 debug : build-sim build-ios build-lib
 
-release : build-sim build-ios build-lib
+release : build-ios build-lib
 
 debug-install : debug install
 
