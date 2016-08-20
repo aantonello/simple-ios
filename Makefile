@@ -13,7 +13,7 @@ CONFIG=Debug
 endif
 
 LIBVER  = 2.0
-BUILD   = 56
+BUILD   = 64
 TARGET  = Simple
 VERSION = A
 ROOTDIR = .
