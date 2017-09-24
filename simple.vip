@@ -1,4 +1,4 @@
-Simple="$WORKHOME/plx/src/Simple" CD=. enc="utf8" fmt="unix" in=onload.vim {
+Simple="$WORKHOME/plx/src/simple-ios" CD=. enc="utf8" fmt="unix" in=onload.vim {
  docs=docs {
   doxyfile.css
  }
