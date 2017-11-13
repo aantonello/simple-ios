@@ -109,6 +109,7 @@ Simple="$WORKHOME/plx/src/simple-ios" CD=. enc="utf8" fmt="unix" in=onload.vim {
  onload.vim
  doxyfile
  build.sh
+ publish.sh
  Makefile
  ChangeLog
 }
