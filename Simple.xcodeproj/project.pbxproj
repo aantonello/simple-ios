@@ -347,6 +347,7 @@
 					D2B21D981D380FF700424ED1 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = BB4FDN4N26;
+						ProvisioningStyle = Manual;
 					};
 					D2B21DA21D380FF700424ED1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -531,6 +532,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2.0.57.0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BB4FDN4N26;
@@ -548,6 +551,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.Simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -556,6 +560,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2.0.57.1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BB4FDN4N26;
@@ -573,6 +579,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paralaxe.Simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

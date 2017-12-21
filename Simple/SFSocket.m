@@ -17,6 +17,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <sys/time.h>
 #include <sys/select.h>
 #include <sys/errno.h>
 #include <sys/ioctl.h>
