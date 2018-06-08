@@ -1,5 +1,7 @@
 " Vim Project script configuration
 
+set fdm=marker
+
 "" This configuration should be done only once
 if exists('g:did_simple_config')
     finish
